@@ -1,0 +1,40 @@
+﻿@model List<HaleyMueller_Dev.Models.ProjectModel>
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+@foreach(var project in Model){
+<div class="row" style="margin-bottom: 2em;">
+    <h1 class="display-6">@project.Name</h1>
+    <hr>
+    <div class="row">
+        <div class="col-md-9 col-sm-12 col-lg-6"><img src="@project.ImgUrl" class="img-fluid img-thumbnail rounded" alt="..."></div>
+        <div class="col-sm-12 col-md-3 col-lg-6 align-self-center">
+            <p class="lead">
+                @project.Description
+            </p>
+            @if (string.IsNullOrEmpty(project.Warning) == false)
+            {
+                <p class="text-danger">
+                    @project.Warning
+                </p>
+            }
+            <div class=""><p>Last Updated: @project.LastUpdated.ToString("d")</p></div>
+            <span class="align-bottom float-start">
+                    @foreach (var link in project.Links)
+                    {
+                        <a href="@link.Url">@link.Name</a>
+                    }
+                </span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-9"></div>
+        <div class="col-3"></div>
+    </div>
+</div>
+}
