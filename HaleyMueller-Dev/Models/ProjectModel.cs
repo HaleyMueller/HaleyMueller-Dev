@@ -2,10 +2,11 @@
 {
     public class ProjectModel
     {
+        public string ID { get; set; } = Guid.NewGuid().ToString();
         public string Name { get; set; }
         public string Description { get; set; }
         public DateTime LastUpdated { get; set; }
-        public string ImgUrl { get; set; }
+        public List<string> ImgUrls { get; set; } = new List<string>();
         public string Warning { get; set; }
         public int Significance { get; set; }
         public List<Link> Links { get; set; } = new List<Link>();
