@@ -17,14 +17,7 @@ namespace HaleyMueller_Dev.Controllers
         {
             return View();
         }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
         
-        //TODO: Make sure all of these sites are able to log into MDO
-        //Make sure all projects is updated on repo
 
         public IActionResult LoadProjectList(int id)
         {
