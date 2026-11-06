@@ -1,0 +1,6 @@
+services:
+  haleymueller-dev:
+    image: ${DOCKER_REGISTRY-}haleymuellerdev
+    build:
+      context: .
+      dockerfile: HaleyMueller-Dev/Dockerfile

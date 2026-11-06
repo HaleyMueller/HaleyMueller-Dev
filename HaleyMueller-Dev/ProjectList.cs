@@ -11,7 +11,7 @@ namespace HaleyMueller_Dev
             {
                 Name = "Stream Flow Platform",
                 ImgUrls = new() { "/img/zen_NF2651wEtO.png", "/img/zen_mR1CSOE0Zg.png", "/img/zen_yAkLDfgOlw.png", "/img/zen_CCip5Bqq5Q.png", "/img/flow-twitch.svg" },
-                Description = "A complete live streaming automation platform that captures, processes, and archives every broadcast. It records stream lifecycle events from Twitch and Owncast, synchronizes chat, redeems, and custom events in real time through SignalR and WebSockets, powers live overlays, and integrates with Resonite for in-game event automation. After each stream, it automatically downloads the VOD, transcodes it for browser playback, generates AI-powered transcripts using Whisper, creates searchable subtitles, summarizes the stream with a local Ollama model, and builds interactive replays complete with synchronized chat, event timelines, game detection, and word cloud analytics.",
+                Description = "A complete live streaming automation platform that captures, processes, and archives every broadcast.<br/><br/>It records stream lifecycle events from Twitch and Owncast, synchronizes chat, redeems, and custom events in real time through SignalR and WebSockets, powers live overlays, and integrates with Resonite for in-game event automation.<br/><br/>After each stream, it automatically downloads the VOD, transcodes it for browser playback, generates AI-powered transcripts using Whisper, creates searchable subtitles, summarizes the stream with a local Ollama model, and builds interactive replays complete with synchronized chat, event timelines, game detection, and word cloud analytics.",
                 LastUpdated = new DateTime(2026, 7, 4),
                 Links = new List<ProjectModel.Link>()
                 {
@@ -26,15 +26,15 @@ namespace HaleyMueller_Dev
             {
                 Name = "Midwest DevOps API",
                 ImgUrls = new() { "/img/Swagger.png", "/img/devenv_ybOoMibgXk.png", "/img/devenv_FZqHrwJiMH.png" },
-                Description = "This was created to make all of my authentication and other modules to use the same code.",
+                Description = "Designed REST API with 50+ endpoints for auth, employee management,permissions, and bulk operations.<br/><br/>Implemented RBAC/permissions and integrated third-party services.<br/><br/>Documented via Swagger/OpenAPI; secured endpoints and optimized common queries.",
                 LastUpdated = new DateTime(2022, 6, 23),
                 Links = new List<ProjectModel.Link>()
                 {
-                    new ProjectModel.Link()
-                    {
-                        Name = "Swagger",
-                        Url = "https://api.midwestdevops.com/swagger/index.html"
-                    }
+                    //new ProjectModel.Link()
+                    //{
+                    //    Name = "Swagger",
+                    //    Url = "https://api.midwestdevops.com/swagger/index.html"
+                    //}
                 }
             });
 
@@ -63,11 +63,11 @@ namespace HaleyMueller_Dev
                 LastUpdated = new DateTime(2021, 10, 14),
                 Links = new List<ProjectModel.Link>()
                 {
-                    new ProjectModel.Link()
-                    {
-                        Name = "Website",
-                        Url = "https://cards.midwestdevops.com/"
-                    },
+                    //new ProjectModel.Link()
+                    //{
+                    //    Name = "Website",
+                    //    Url = "https://cards.midwestdevops.com/"
+                    //},
                     new ProjectModel.Link()
                     {
                         Name = "Repository",
@@ -76,28 +76,28 @@ namespace HaleyMueller_Dev
                 }
             });
 
-            model.Add(new Models.ProjectModel()
-            {
-                Name = "Food Tracker",
-                ImgUrls = new() { "/img/FoodTracker.png" },
-                Description = "This project will read Walmart reciepts from a single picture using Azure AI and track your purchase history.",
-                LastUpdated = new DateTime(2021, 2, 15),
-                Links = new List<ProjectModel.Link>()
-                {
-                    new ProjectModel.Link()
-                    {
-                        Name = "Repository",
-                        Url = "https://github.com/Midwest-DevOps-LLC/FoodTracker"
-                    }
-                }
-            });
+            //model.Add(new Models.ProjectModel()
+            //{
+            //    Name = "Food Tracker",
+            //    ImgUrls = new() { "/img/FoodTracker.png" },
+            //    Description = "This project will read Walmart reciepts from a single picture using Azure AI and track your purchase history.",
+            //    LastUpdated = new DateTime(2021, 2, 15),
+            //    Links = new List<ProjectModel.Link>()
+            //    {
+            //        new ProjectModel.Link()
+            //        {
+            //            Name = "Repository",
+            //            Url = "https://github.com/Midwest-DevOps-LLC/FoodTracker"
+            //        }
+            //    }
+            //});
 
             //TODO Set this up
             model.Add(new Models.ProjectModel()
             {
                 Name = "Live Streaming",
                 ImgUrls = new() { "/img/Livestream.png" },
-                Description = "This project streams a video file on a website for other viewer to see. It has the ability for chat and Spotify control.",
+                Description = "This project streams a video file on a website for other viewers to see. It has the ability for chat and Spotify control.",
                 LastUpdated = new DateTime(2021, 10, 14),
                 Links = new List<ProjectModel.Link>()
                 {
@@ -117,11 +117,11 @@ namespace HaleyMueller_Dev
                 LastUpdated = new DateTime(2022, 7, 4),
                 Links = new List<ProjectModel.Link>()
                 {
-                    new ProjectModel.Link()
-                    {
-                        Name = "Website",
-                        Url = "https://midwestdevops.com/"
-                    },
+                    //new ProjectModel.Link()
+                    //{
+                    //    Name = "Website",
+                    //    Url = "https://midwestdevops.com/"
+                    //},
                     new ProjectModel.Link()
                     {
                         Name = "Repository",
@@ -138,11 +138,11 @@ namespace HaleyMueller_Dev
                 LastUpdated = new DateTime(2022, 7, 4),
                 Links = new List<ProjectModel.Link>()
                 {
-                    new ProjectModel.Link()
-                    {
-                        Name = "Repository",
-                        //Url = "https://github.com/Midwest-DevOps-LLC/Internet-Radio"
-                    }
+                    //new ProjectModel.Link()
+                    //{
+                    //    Name = "Repository",
+                    //    Url = "https://github.com/Midwest-DevOps-LLC/Internet-Radio"
+                    //}
                 }
             });
 

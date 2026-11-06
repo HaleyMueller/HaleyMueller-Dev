@@ -6,8 +6,6 @@
     <p>This site showcases some personal projects that I've created to learn new skills</p>
 </div>
 
-<!--ApplesOranges4Me-->
-
 <div class="row">
     <div class="col-lg-3 col-md-12"></div>
     <div class="col-lg-6 col-md-12">
@@ -39,6 +37,11 @@
             url: "/Home/LoadProjectList/" + sortID
         }).done(function (data) {
             $('#productList').html(data);
+            document.addEventListener('shown.bs.modal', function () {
+                document.querySelectorAll('.carousel').forEach(el => {
+                    bootstrap.Carousel.getOrCreateInstance(el);
+                });
+            });
         });
     }
     </script>
